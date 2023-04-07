@@ -1,4 +1,5 @@
-import { StyledInput, StyledH3, StyledUl, StyledHeader, StyledLi, StyledNav } from './Header.styles';
+import { StyledInput, StyledH3, StyledUl, StyledHeader, StyledLi, StyledNav, Menu } from './Header.styles';
+
 export default function Header() {
 	return (
 		<StyledHeader>
@@ -9,6 +10,7 @@ export default function Header() {
 					<StyledLi>List anime</StyledLi>
 				</StyledUl>
 			</StyledNav>
+			<Menu />
 			<StyledInput placeholder="Search anime or movie" />
 		</StyledHeader>
 	);
