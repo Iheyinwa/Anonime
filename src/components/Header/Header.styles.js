@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { HiMenuAlt4 } from 'react-icons/hi';
+import { HiMenuAlt4, HiX } from 'react-icons/hi';
 
 export const StyledHeader = styled.header`
 	display: flex;
@@ -52,4 +52,19 @@ cursor: pointer;
 @media (min-width: 870px){
 	display: none;
 }
+`;
+export const Close = styled(HiX)`
+width: 70px;
+height: 50px;
+color: white;
+font-size: 45px;
+cursor: pointer;
+
+@media (min-width: 870px){
+	display: none;
+}
+`;
+export const MobileUl = styled.ul`
+	list-style: none;
+	padding: 5%;
 `;

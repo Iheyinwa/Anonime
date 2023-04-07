@@ -4,6 +4,7 @@ export const MovieContainer = styled.main`
 	grid-template-columns: repeat(6, 1fr);
 	grid-column-gap: 14px;
 	position: relative;
+	width: 100%;
 
 	//Mobile Devices
 	@media only screen and (max-width: 600px) {
@@ -24,7 +25,7 @@ export const MovieContainer = styled.main`
 export const MovieCard1 = styled.div`
 	height: 284.11px;
 	padding: 8px;
-	width: 160px;
+	width: 150px;
 	position: relative;
 	border-radius: 12px;
 `;

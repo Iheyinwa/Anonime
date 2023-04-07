@@ -1,9 +1,17 @@
 'use client';
 
-import { DarkGradient, HeroParagraph, HeroText, Paragraph, SectionTitle, StyledHero, Search } from './Explore.styles';
+import {
+	HeroH3,
+	DarkGradient,
+	HeroParagraph,
+	HeroText,
+	Paragraph,
+	SectionTitle,
+	StyledHero,
+	Search
+} from './Explore.styles';
 import Image from 'next/image';
 import carousel from '/public/carousel.jpeg';
-import { StyledH3 } from '../Header/Header.styles';
 export default function Explore() {
 	return (
 		<section>
@@ -14,7 +22,7 @@ export default function Explore() {
 				<Image src={carousel} alt="anime" fill={true} style={{ borderRadius: '12px' }} />
 				<DarkGradient />
 				<HeroText>
-					<StyledH3>Weather With You</StyledH3>
+					<HeroH3>Weather With You</HeroH3>
 					<HeroParagraph>
 						{' '}
 						Corrupt politicians, frenzied nationalists, and other warmongering forces constantly jeopardize
