@@ -1,6 +1,6 @@
 'use client';
 
-import { DarkGradient, HeroParagraph, HeroText, Paragraph, SectionTitle, StyledHero } from './Explore.styles';
+import { DarkGradient, HeroParagraph, HeroText, Paragraph, SectionTitle, StyledHero, Search } from './Explore.styles';
 import Image from 'next/image';
 import carousel from '/public/carousel.jpeg';
 import { StyledH3 } from '../Header/Header.styles';
@@ -9,6 +9,7 @@ export default function Explore() {
 		<section>
 			<SectionTitle>Explore</SectionTitle>
 			<Paragraph>What are you gonna watch today?</Paragraph>
+			<Search placeholder="Search anime or movie" />
 			<StyledHero>
 				<Image src={carousel} alt="anime" fill={true} style={{ borderRadius: '12px' }} />
 				<DarkGradient />
