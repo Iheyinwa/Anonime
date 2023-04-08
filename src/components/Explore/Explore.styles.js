@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { StyledH3 } from '../Header/Header.styles';
 
 export const StyledHero = styled.div`
 	width: 100%;
@@ -13,6 +14,10 @@ export const HeroText = styled.div`
 	left: 16px;
 	width: 50%;
 	margin: 0 15px;
+
+	@media (max-width: 500px) {
+		font-size: 20px;
+	}
 
 	@media (max-width: 870px) {
 		width: fit-content;
@@ -42,4 +47,10 @@ export const Search = styled.input`
 	@media (min-width: 870px) {
 		display: none;
 	}
+`;
+
+export const HeroH3 = styled(StyledH3)`
+@media (max-width: 500px){
+	font-size: 20px;
+}
 `;
