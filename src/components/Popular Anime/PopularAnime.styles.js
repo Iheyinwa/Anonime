@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const PopularContainer = styled.div`
 	width: 35%;
-	/* @media (max-width: 870px) {
-		display: none;
-	} */
+	@media (max-width: 870px) {
+		width: 100%;
+	}
 `;
 
 export const PopularMovies = styled.aside`
@@ -15,7 +15,7 @@ export const PopularMovies = styled.aside`
 	position: relative;
 	width: 100%;
 
-	@media (max-width: 870px) {
+	@media (min-width: 440px) and (max-width: 870px) {
 		grid-template-columns: repeat(3, 1fr);
 	}
 `;
@@ -25,11 +25,4 @@ export const PopularCard = styled.div`
 	width: 150px;
 	position: relative;
 	border-radius: 12px;
-`;
-
-export const SmallPopularContainer = styled.div`
-	width: 35%;
-	@media (min-width: 870px) {
-		display: none;
-	}
 `;

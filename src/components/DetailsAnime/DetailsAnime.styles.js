@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 export const DetailContainer = styled.div`
 	display: flex;
-	align-items: flex-start;
 	align-content: start;
+	@media (max-width: 870px) {
+		justify-content: space-around;
+	}
 `;
 export const MovieDetails = styled.div`
 	margin-left: 20px;
-	margin-top: 0;
+	width: 100%;
 `;
 
 export const SynopsisContainer = styled.div`margin-top: 40px;`;
