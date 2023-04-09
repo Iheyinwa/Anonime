@@ -7,7 +7,10 @@ import Spy from '/public/spycard.jpeg';
 import AttackOnTitan from '/public/attackontitan.png';
 import CaptainTsu from '/public/captsu.jpeg';
 import Aoashi from '/public/aoashi.jpeg';
-import { MovieCard1 } from '../Release/Release.styles';
+import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
+import { useEffect } from 'react';
+import { POPULAR_API } from '@/app/api/hello/routecomponents';
 
 const titles = [
 	{
@@ -48,14 +51,31 @@ const titles = [
 	}
 ];
 
+// const fetchPopular = () => {
+// 	const res = axios.get(POPULAR_API);
+// 	return res;
+// };
 export default function PopularAnime() {
+	// const { isLoading, data } = useQuery({
+	// 	queryKey: [ 'Popular' ],
+	// 	queryFn: fetchPopular
+	// });
+
+	// if (isLoading) {
+	// 	console.log('loading');
+	// }
 	return (
 		<PopularContainer>
 			<SectionTitle>Popular Anime</SectionTitle>
 			<PopularMovies>
 				{titles.map((title) => (
 					<PopularCard key={title.id}>
-						<Image src={title.src} alt="One-piece" fill style={{ borderRadius: '12px' }} />
+						<Image
+							src={title.src}
+							alt="One-piece"
+							fill
+							style={{ borderRadius: '12px', objectFit: 'cover' }}
+						/>
 					</PopularCard>
 				))}
 			</PopularMovies>

@@ -13,10 +13,11 @@ input{
   font-family: inherit;
 }
 .wrapper{
-	display: flex;
+  display: block;
+	
+  @media (min-width: 870px){
+   display: flex;
   justify-content: space-between;
-  @media (max-width: 870px){
-    display: block;
   }
 }
 .container{

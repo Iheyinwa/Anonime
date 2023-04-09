@@ -54,7 +54,15 @@ export default function Release() {
 			<MovieContainer>
 				{titles.map((title) => (
 					<MovieCard1 key={title.id}>
-						<Image src={title.src} alt="One-piece" fill={true} style={{ borderRadius: '12px' }} />
+						<Image
+							src={title.src}
+							alt="One-piece"
+							fill
+							sizes="(min-width: 600px) 100vw,
+              (max-width: 870px) 50vw,
+              33vw"
+							style={{ borderRadius: '12px' }}
+						/>
 						<DarkText />
 						<MovieText>
 							{title.episode} <p>{title.name}</p>
