@@ -13,16 +13,19 @@ input{
   font-family: inherit;
 }
 .wrapper{
-  display: block;
-	
-  @media (min-width: 870px){
-   display: flex;
+ 
+	  display: flex;
   justify-content: space-between;
-  }
 }
 .container{
   width: 60%;
-  @media (max-width: 870px){
-    width: 100%;
-  }
+  
 }
+ @media only screen and (max-width: 870px){
+   .wrapper{
+    display: block;
+   }
+   .container{
+    width: 100%;
+   }
+  }
