@@ -32,10 +32,13 @@ export const SectionTitle = styled.h3`
 	font-size: 30px;
 	@media (max-width: 870px) {
 		font-size: 25px;
+		width: 100%;
 	}
 `;
 
 export const DarkGradient = styled(StyledHero)`
+	position: inherit;
+	border-radius: 12px;
 	background: linear-gradient(269.96deg, rgba(29, 29, 29, 0) 0.04%, rgba(29, 29, 29, 0.8) 99.5%);
 `;
 export const Search = styled.input`
