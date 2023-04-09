@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { HiMenuAlt4, HiX } from 'react-icons/hi';
+import Link from 'next/link';
 
 export const StyledHeader = styled.header`
 	display: flex;
@@ -19,8 +21,13 @@ export const StyledH3 = styled.h3`
 export const StyledUl = styled.ul`
 	list-style: none;
 	display: flex;
+
+	@media (max-width: 870px) {
+		display: none;
+	}
 `;
-export const StyledLi = styled.li`padding: 10px;`;
+export const StyledLi = styled(Link)`padding: 10px; text-decoration: none;
+color:#868686;`;
 
 export const StyledInput = styled.input`
 	background-color: #374151;
@@ -31,4 +38,39 @@ export const StyledInput = styled.input`
 	text-align: left;
 	color: #868686;
 	font-weight: 400;
+
+	@media (max-width: 870px) {
+		display: none;
+	}
+`;
+
+export const Menu = styled(HiMenuAlt4)`
+width: 70px;
+height: 50px;
+color: white;
+font-size: 45px;
+cursor: pointer;
+
+@media (min-width: 870px){
+	display: none;
+}
+`;
+export const Close = styled(HiX)`
+width: 70px;
+height: 50px;
+color: white;
+font-size: 45px;
+cursor: pointer;
+
+@media (min-width: 870px){
+	display: none;
+}
+`;
+export const MobileUl = styled.ul`
+	list-style: none;
+	padding: 5%;
+
+	@media (min-width: 870px) {
+		display: none;
+	}
 `;

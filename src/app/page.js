@@ -1,13 +1,5 @@
-'use client';
-
-import Explore from '@/components/Explore/Explorecomponents';
-import Release from '@/components/Release/Releasecomponents';
+import HomePage from './HomePage';
 
 export default function Home() {
-	return (
-		<main>
-			<Explore />
-			<Release />
-		</main>
-	);
+	return <HomePage />;
 }

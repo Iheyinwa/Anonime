@@ -4,9 +4,26 @@ export const MovieContainer = styled.main`
 	grid-template-columns: repeat(6, 1fr);
 	grid-column-gap: 14px;
 	position: relative;
+	width: 100%;
+
+	//Mobile Devices
+	@media only screen and (max-width: 600px) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 60px;
+	}
+	//Tablet Devices
+	@media (min-width: 601px) and (max-width: 870px) {
+		grid-template-columns: repeat(3, 1fr);
+		grid-row-gap: 60px;
+	}
+
+	@media (min-width: 871px) and (max-width: 1200px) {
+		grid-template-columns: repeat(4, 1fr);
+		grid-row-gap: 60px;
+	}
 `;
 export const MovieCard1 = styled.div`
-	height: 284.11px;
+	height: 280px;
 	padding: 8px;
 	width: 160px;
 	position: relative;
