@@ -23,9 +23,9 @@ export const MovieContainer = styled.main`
 	}
 `;
 export const MovieCard1 = styled.div`
-	height: 284.11px;
+	height: 280px;
 	padding: 8px;
-	width: 150px;
+	width: 160px;
 	position: relative;
 	border-radius: 12px;
 `;

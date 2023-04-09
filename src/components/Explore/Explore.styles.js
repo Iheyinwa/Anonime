@@ -28,7 +28,12 @@ export const HeroParagraph = styled.p`
 	line-height: 27px;
 `;
 
-export const SectionTitle = styled.h3`font-size: 32px;`;
+export const SectionTitle = styled.h3`
+	font-size: 30px;
+	@media (max-width: 870px) {
+		font-size: 25px;
+	}
+`;
 
 export const DarkGradient = styled(StyledHero)`
 	background: linear-gradient(269.96deg, rgba(29, 29, 29, 0) 0.04%, rgba(29, 29, 29, 0.8) 99.5%);

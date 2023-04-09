@@ -1,7 +1,7 @@
 'use client';
 import './globals.css';
 import { Poppins } from 'next/font/google';
-import Header from '@/components/Header/Headercomponents';
+import ReactQueryWrapper from './ReactQueryWrapper';
 
 const poppins = Poppins({
 	subsets: [ 'latin' ],
@@ -12,8 +12,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={poppins.className}>
 			<body>
-				<Header />
-				{children}
+				<ReactQueryWrapper>{children}</ReactQueryWrapper>
 			</body>
 		</html>
 	);

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
+import Link from 'next/link';
 
 export const StyledHeader = styled.header`
 	display: flex;
@@ -25,7 +26,8 @@ export const StyledUl = styled.ul`
 		display: none;
 	}
 `;
-export const StyledLi = styled.li`padding: 10px;`;
+export const StyledLi = styled(Link)`padding: 10px; text-decoration: none;
+color:#868686;`;
 
 export const StyledInput = styled.input`
 	background-color: #374151;
@@ -67,4 +69,8 @@ cursor: pointer;
 export const MobileUl = styled.ul`
 	list-style: none;
 	padding: 5%;
+
+	@media (min-width: 870px) {
+		display: none;
+	}
 `;
