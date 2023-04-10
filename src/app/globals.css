@@ -12,3 +12,16 @@ h2, h3, p{
 input{
   font-family: inherit;
 }
+.wrapper{
+	display: flex;
+  justify-content: space-between;
+  @media (max-width: 870px){
+    display: block;
+  }
+}
+.container{
+  width: 60%;
+  @media (max-width: 870px){
+    width: 100%;
+  }
+}

@@ -22,8 +22,9 @@ export default function Header() {
 				<StyledNav>
 					<StyledH3>Anonime</StyledH3>
 					<StyledUl>
-						<StyledLi>Home</StyledLi>
-						<StyledLi>List anime</StyledLi>
+						<StyledLi href="/">Home</StyledLi>
+
+						<StyledLi href="/anime/anime-details">List anime</StyledLi>
 					</StyledUl>
 				</StyledNav>
 				{state ? <Close onClick={openMenu} /> : <Menu onClick={openMenu} />}
@@ -31,8 +32,8 @@ export default function Header() {
 			</StyledHeader>
 			{state && (
 				<MobileUl>
-					<li>Home</li>
-					<li>List anime</li>
+					<StyledLi href="/">Home</StyledLi>
+					<StyledLi href="/anime/anime-details">List anime</StyledLi>
 				</MobileUl>
 			)}
 		</div>
