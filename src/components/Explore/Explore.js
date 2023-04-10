@@ -19,7 +19,15 @@ export default function Explore() {
 			<Paragraph>What are you gonna watch today?</Paragraph>
 			<Search placeholder="Search anime or movie" />
 			<StyledHero>
-				<Image src={carousel} alt="anime" fill={true} style={{ borderRadius: '12px' }} />
+				<Image
+					src={carousel}
+					alt="anime"
+					fill={true}
+					style={{
+						borderRadius: '12px',
+						objectFit: 'cover'
+					}}
+				/>
 				<DarkGradient />
 				<HeroText>
 					<HeroH3>Weather With You</HeroH3>
